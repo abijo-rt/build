@@ -63,8 +63,9 @@ ngOnInit() {
   this.cardinfoapi(strdate)
   
   this.items=this.productServiceService.getMenuItem()
-
-
+  
+  
+  // this.displaylogo(1)
   
 
 
@@ -85,8 +86,9 @@ displaylogo(status:number):void{
 }
 
 cardinfoapi(date:string):void{
-
+  this.displaylogo(1)
 this.apiservice.getcardinfo(date).subscribe((workdata) => {
+ 
   console.log(workdata)
   if (workdata) {
     this.cards = workdata.location.map((data :Cardinfo ) => ({
