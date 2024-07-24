@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:host {
+
+  
+
+  ::ng-deep .dialog {
+   height: 60rem;
+
+  }
+
+  ::ng-deep .p-inputtext {
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+
+}
+
+th {
+  background-color: white;
+}
+
+
+.edittable {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
